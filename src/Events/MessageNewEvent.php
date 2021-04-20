@@ -1,8 +1,8 @@
 <?php
 
-namespace Webklex\IMAP\Events;
+namespace Ninhtqse\IMAP\Events;
 
-use Webklex\PHPIMAP\Message;
+use Ninhtqse\PHPIMAP\Message;
 
 class MessageNewEvent extends Event {
 

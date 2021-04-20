@@ -1,14 +1,14 @@
 <?php
 
-namespace Webklex\IMAP\Commands;
+namespace Ninhtqse\IMAP\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use Webklex\IMAP\Facades\Client as ClientFacade;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\FolderFetchingException;
-use Webklex\PHPIMAP\Folder;
-use Webklex\PHPIMAP\Message;
+use Ninhtqse\IMAP\Facades\Client as ClientFacade;
+use Ninhtqse\PHPIMAP\Exceptions\ConnectionFailedException;
+use Ninhtqse\PHPIMAP\Exceptions\FolderFetchingException;
+use Ninhtqse\PHPIMAP\Folder;
+use Ninhtqse\PHPIMAP\Message;
 
 class ImapIdleCommand extends Command {
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Webklex\IMAP\Events;
+namespace Ninhtqse\IMAP\Events;
 
-use Webklex\PHPIMAP\Folder;
+use Ninhtqse\PHPIMAP\Folder;
 
 class FolderMovedEvent extends Event {
 

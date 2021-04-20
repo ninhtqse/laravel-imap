@@ -131,8 +131,8 @@ return [
     */
     'options' => [
         'delimiter' => '/',
-        'fetch' => \Webklex\PHPIMAP\IMAP::FT_PEEK,
-        'sequence' => \Webklex\PHPIMAP\IMAP::ST_MSGN,
+        'fetch' => \Ninhtqse\PHPIMAP\IMAP::FT_PEEK,
+        'sequence' => \Ninhtqse\PHPIMAP\IMAP::ST_MSGN,
         'fetch_body' => true,
         'fetch_flags' => true,
         'message_key' => 'list',
@@ -162,20 +162,20 @@ return [
     */
     'events' => [
         "message" => [
-            'new' => \Webklex\IMAP\Events\MessageNewEvent::class,
-            'moved' => \Webklex\IMAP\Events\MessageMovedEvent::class,
-            'copied' => \Webklex\IMAP\Events\MessageCopiedEvent::class,
-            'deleted' => \Webklex\IMAP\Events\MessageDeletedEvent::class,
-            'restored' => \Webklex\IMAP\Events\MessageRestoredEvent::class,
+            'new' => \Ninhtqse\IMAP\Events\MessageNewEvent::class,
+            'moved' => \Ninhtqse\IMAP\Events\MessageMovedEvent::class,
+            'copied' => \Ninhtqse\IMAP\Events\MessageCopiedEvent::class,
+            'deleted' => \Ninhtqse\IMAP\Events\MessageDeletedEvent::class,
+            'restored' => \Ninhtqse\IMAP\Events\MessageRestoredEvent::class,
         ],
         "folder" => [
-            'new' => \Webklex\IMAP\Events\FolderNewEvent::class,
-            'moved' => \Webklex\IMAP\Events\FolderMovedEvent::class,
-            'deleted' => \Webklex\IMAP\Events\FolderDeletedEvent::class,
+            'new' => \Ninhtqse\IMAP\Events\FolderNewEvent::class,
+            'moved' => \Ninhtqse\IMAP\Events\FolderMovedEvent::class,
+            'deleted' => \Ninhtqse\IMAP\Events\FolderDeletedEvent::class,
         ],
         "flag" => [
-            'new' => \Webklex\IMAP\Events\FlagNewEvent::class,
-            'deleted' => \Webklex\IMAP\Events\FlagDeletedEvent::class,
+            'new' => \Ninhtqse\IMAP\Events\FlagNewEvent::class,
+            'deleted' => \Ninhtqse\IMAP\Events\FlagDeletedEvent::class,
         ],
     ],
 
@@ -193,7 +193,7 @@ return [
     | The provided masks below are used as the default masks.
     */
     'masks' => [
-        'message' => \Webklex\PHPIMAP\Support\Masks\MessageMask::class,
-        'attachment' => \Webklex\PHPIMAP\Support\Masks\AttachmentMask::class
+        'message' => \Ninhtqse\PHPIMAP\Support\Masks\MessageMask::class,
+        'attachment' => \Ninhtqse\PHPIMAP\Support\Masks\AttachmentMask::class
     ]
 ];

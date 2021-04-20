@@ -10,7 +10,7 @@
 *  -
 */
 
-class CustomAttachmentMask extends \Webklex\PHPIMAP\Support\Masks\AttachmentMask {
+class CustomAttachmentMask extends \Ninhtqse\PHPIMAP\Support\Masks\AttachmentMask {
 
     /**
      * New custom method which can be called through a mask
@@ -35,18 +35,18 @@ class CustomAttachmentMask extends \Webklex\PHPIMAP\Support\Masks\AttachmentMask
 
 }
 
-/** @var \Webklex\PHPIMAP\Client $oClient */
-$oClient = \Webklex\IMAP\Facades\Client::account('default');
+/** @var \Ninhtqse\PHPIMAP\Client $oClient */
+$oClient = \Ninhtqse\IMAP\Facades\Client::account('default');
 $oClient->connect();
 $oClient->setDefaultAttachmentMask(CustomAttachmentMask::class);
 
-/** @var \Webklex\PHPIMAP\Folder $folder */
+/** @var \Ninhtqse\PHPIMAP\Folder $folder */
 $folder = $oClient->getFolder('INBOX');
 
-/** @var \Webklex\PHPIMAP\Message $message */
+/** @var \Ninhtqse\PHPIMAP\Message $message */
 $message = $folder->query()->limit(1)->get()->first();
 
-/** @var \Webklex\PHPIMAP\Attachment $attachment */
+/** @var \Ninhtqse\PHPIMAP\Attachment $attachment */
 $attachment = $message->getAttachments()->first();
 
 /** @var CustomAttachmentMask $masked_attachment */

@@ -11,8 +11,8 @@
  */
 
 /**
- * @var \Webklex\PHPIMAP\Support\MessageCollection $paginator
- * @var \Webklex\PHPIMAP\Message $oMessage
+ * @var \Ninhtqse\PHPIMAP\Support\MessageCollection $paginator
+ * @var \Ninhtqse\PHPIMAP\Message $oMessage
  */
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webklex\IMAP\Events;
+namespace Ninhtqse\IMAP\Events;
 
 
 class FlagDeletedEvent extends FlagNewEvent {
